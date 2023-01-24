@@ -1,0 +1,24 @@
+.noContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.noContentContainer img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.noContentContainer p:first-child {
+  font-size: medium !important;
+  color: var(--gray-100);
+  font-weight: bolder !important;
+}
+
+.noContentContainer p:last-child {
+  font-size: small !important;
+  color: var(--gray-400);
+  font-weight: normal;
+}

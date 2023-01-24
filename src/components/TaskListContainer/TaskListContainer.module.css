@@ -1,0 +1,48 @@
+.container {
+  margin-top: 4rem;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.newTasks {
+  display: flex;
+  justify-content: space-between;
+  min-width: 9.5rem;
+}
+
+.newTasks p:first-child {
+  color: var(--blue-300)
+}
+
+.newTasks p:last-child {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray-400);
+  width: 1.5rem;
+  border-radius: 10px;
+}
+
+.finishedTasks {
+  display: flex;
+  justify-content: space-between;
+  min-width: 7.5rem;
+}
+
+
+.finishedTasks p:first-child {
+  color: var(--purple-400)
+}
+
+.finishedTasks p:last-child {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray-400);
+  width: 1.5rem;
+  border-radius: 10px;
+}

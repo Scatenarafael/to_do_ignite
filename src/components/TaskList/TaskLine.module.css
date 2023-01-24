@@ -1,0 +1,23 @@
+.taskLine {
+  background-color: var(--gray-500);
+  min-height: 4.5rem;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.taskLine + .taskLine {
+  margin: 1rem 0;
+}
+
+.taskLine img {
+  margin-right: 1rem;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+.lineThroughNone {
+  text-decoration: none;
+}
