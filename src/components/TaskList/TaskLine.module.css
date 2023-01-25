@@ -1,10 +1,20 @@
 .taskLine {
+  color: var(--gray-100);
   background-color: var(--gray-500);
   min-height: 4.5rem;
+  width: 100%;
+  border: none;
   border-radius: 8px;
   padding: 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+
+.taskLine p {
+  padding: 0;
+  text-align: start;
 }
 
 .taskLine + .taskLine {
@@ -17,7 +27,27 @@
 
 .lineThrough {
   text-decoration: line-through;
+  color: var(--gray-300);
+  padding: 0;
 }
 .lineThroughNone {
   text-decoration: none;
+  padding: 0;
+}
+
+.DoneTaskContent {
+  display: flex;
+}
+
+.TrashBtn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  min-width: 1.5rem;
+}
+
+.TrashBtn img {
+  margin: 0;
+  width: 100%;
 }

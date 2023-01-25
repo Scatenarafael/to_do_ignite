@@ -7,14 +7,14 @@ import styles from './TaskList.module.css'
 
 
 
-export function TaskList({ tasks }: TasksProps) {
+export function TaskList({ tasks, toggleTaskDone, removeTask }: TasksProps) {
   return (
     <div className={styles.body}>
       {
         tasks.length ? (
         tasks.map((task) => {
           return (
-            <TaskLine done={task.done} content={task.taskContent} key={task.id} />
+            <TaskLine id={task.id} done={task.done} content={task.taskContent} removeTask={removeTask} toggleTaskDone={toggleTaskDone} key={task.id} />
           )
         })
         ) : (

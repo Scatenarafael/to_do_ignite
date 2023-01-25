@@ -13,6 +13,8 @@ export interface TaskListProps {
 
 export interface TasksProps {
   tasks: TaskListProps[]
+  toggleTaskDone: (id: string) => void
+  removeTask: (id: string) => void
 }
 
 function App() {
@@ -41,7 +43,7 @@ function App() {
       {
         id,
         taskContent: taskToSetDone.taskContent,
-        done: !taskToSetDone
+        done: !taskToSetDone.done
       }
     ])
   }
@@ -52,7 +54,7 @@ return (
     <Header />
     <div className={styles.container}>
       <InputTask handleAddTask={addTask} />
-      <TaskListContainer tasks={tasks} />
+      <TaskListContainer tasks={tasks} toggleTaskDone={toggleTaskDone} removeTask={removeTask} />
     </div>
   </div>
 )
